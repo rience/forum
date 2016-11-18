@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Devise mailer settings.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # Devise secret key.
+  config.secret_key = 'c755caa1ced3d1810dfd0933a4876c5604e37ccbe2a173f7d8e513d152be0bd0d4cbbe09e91c963b0261ad38c09d8322371a627611beac18f52da705f17ce26f'
 end
